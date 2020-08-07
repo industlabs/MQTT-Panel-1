@@ -13,9 +13,9 @@ socket.on('connect', function () {
     var message = msg.topic.split('/');
     var sensor = message[4];
 
-    //console.log('message: '+message);
-    //console.log('sensor: '+sensor);
-    //console.log(String.fromCharCode.apply(null, new Uint8Array(msg.payload)));
+    console.log('message: '+message);
+    console.log('sensor: '+sensor);
+    console.log(String.fromCharCode.apply(null, new Uint8Array(msg.payload)));
 
     var payload = String.fromCharCode.apply(null, new Uint8Array(msg.payload));
 
